@@ -27,5 +27,6 @@ module.exports = {
     'simple-import-sort/exports': 'error',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': 'off',
   },
 };
