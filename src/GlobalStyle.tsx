@@ -1,6 +1,7 @@
-import emotionReset from 'emotion-reset';
-import { Global, css } from '@emotion/react';
 import 'assets/font/font.css';
+
+import { css, Global } from '@emotion/react';
+import emotionReset from 'emotion-reset';
 
 const GlobalStyle = () => {
   return (
@@ -13,6 +14,10 @@ const GlobalStyle = () => {
         }
         body {
           font-family: 'Noto Sans KR', sans-serif;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       `}
     />
