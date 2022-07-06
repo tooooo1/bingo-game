@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 
-import PALETTE from '../constants/palette';
+import PALETTE from '@/constants/palette';
 
 const Ready = () => {
   const imgUrl = 'https://img.icons8.com/color/48/000000/box-important--v1.png';

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import PALETTE from '../constants/palette';
+import PALETTE from '@/constants/palette';
 
 const Board = () => {
   const stage = 5;

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 
-import PALETTE from '../constants/palette';
+import PALETTE from '@/constants/palette';
 
 const NotFound = () => {
   const navigate = useNavigate();
