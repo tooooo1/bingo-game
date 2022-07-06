@@ -1,16 +1,13 @@
 import { css } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 
+import Button from '@/components/Button';
 import PALETTE from '@/constants/palette';
 
+const imgUrl = 'https://img.icons8.com/color/48/000000/box-important--v1.png';
+
 const Ready = () => {
-  const imgUrl = 'https://img.icons8.com/color/48/000000/box-important--v1.png';
-
   const navigate = useNavigate();
-
-  const loginClick = () => {
-    navigate('/play');
-  };
 
   return (
     <>
@@ -58,29 +55,12 @@ const Ready = () => {
         >
           2줄을 먼저 맞추면 승리!
         </div>
-        <button css={Button} onClick={loginClick}>
+        <Button color={PALETTE.PRI_BLUE} onClick={() => navigate('/play')}>
           시작
-        </button>
+        </Button>
       </div>
     </>
   );
 };
 
 export default Ready;
-
-const Button = css`
-  width: 100%;
-  padding: 1rem 0;
-  border-radius: 7px;
-  background-color: ${PALETTE.PRI_BLUE};
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  transition: 0.3s all ease;
-  font-family: 'Noto Sans KR';
-  cursor: pointer;
-  :hover {
-    transform: scale(1.1);
-  }
-`;
