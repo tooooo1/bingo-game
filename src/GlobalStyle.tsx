@@ -1,4 +1,4 @@
-import 'assets/font/font.css';
+import './assets/font/font.css';
 
 import { css, Global } from '@emotion/react';
 import emotionReset from 'emotion-reset';
